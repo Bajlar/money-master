@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Money Master</title>
+  <!-- Tailwind CSS Link -->
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body>
+  <header>
+    <h1 class="text-5xl text-center font-bold text-cyan-600 mt-2">Money Master💰</h1>
+  </header>
+  <main>
+    <section class="mt-5">
+      <div class="bg-gray-100 w-3/4 mx-auto text-center rounded-lg">
+        <div>
+          <h4 class="pt-3 text-2xl font-medium">Income</h4>
+          <div class="mt-3">
+            <label class="font-medium" for="">Income:</label>
+            <input id="income-text-field" class="px-4 py-3 bg-gray-300 w-2/4 rounded-xl" type="text" placeholder="10000">
+          </div>
+        </div>
+
+        <div>
+          <h4 class="mt-3 text-2xl font-medium">Expenses</h4>
+          <div class="mt-3">
+            <label class="font-medium" for="">Food:</label>
+            <input id="food-text-field" class="px-4 py-3 bg-gray-300 w-2/4 rounded-xl" type="text" placeholder="3000">
+          </div>
+          <div class="mt-3">
+            <label class="font-medium" for="">Rent:</label>
+            <input id="rent-text-field" class="px-4 py-3 bg-gray-300 w-2/4 rounded-xl" type="text" placeholder="2000">
+          </div>
+          <div class="mt-3">
+            <label class="font-medium" for="">Clothes:</label>
+            <input id="clothes-text-field" class="px-4 py-3 bg-gray-300 w-2/4 rounded-xl" type="text" placeholder="500">
+          </div>
+          <button id="btn-calculator" class="mt-4 px-14 py-4 bg-cyan-600 text-white font-bold text-2xl rounded-xl">Calculate</button>
+        </div>
+
+        <h4 class="mt-3 text-2xl font-medium">Total Expenses: <span id="expenses-total">5500</span></h4>
+        <h4 class="mt-3 text-2xl font-medium">Balance: <span id="balance-total">4500</span></h4> 
+
+        <div class="mt-3 flex justify-center items-center gap-2">
+          <label class="font-medium" for="">Save:</label>
+          <input id="save-text-field" class="px-4 py-1 bg-gray-300 w-1/4 rounded-xl" type="text" placeholder="20">
+          <p>%</p>
+          <button id="btn-save" class="px-4 py-2 bg-cyan-600 text-white font-bold text-2xl rounded-xl">Save</button>
+        </div>
+        <h4 class="mt-3 text-2xl font-medium">Saving Amount: <span id="saving-total">2000</span></h4>
+        <h4 class="mt-3 text-2xl font-medium">Remaining Balance: <span id="remaining-balance">2500</span></h4> 
+      </div>
+    </section>
+  </main>
+
+  <!-- Tailwind JS File Link -->
+  <script src="js/tailwind.js"></script>
+  <!-- Custom JS File Link -->
+  <script src="js/app.js"></script>
+</body>
+</html>
